@@ -1,5 +1,5 @@
-Automatic action: Push due date when moving cards
-=================================================
+Automatic action: Set the category on a card when moved to a specific column
+============================================================================
 
 This plugin adds an automatic action to Kanboard that allows you to
 set the category on a card when it is moved to a specific column.
