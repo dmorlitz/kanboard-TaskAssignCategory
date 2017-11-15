@@ -9,7 +9,7 @@ use Kanboard\Action\Base;
  * Rename Task Title
  *
  * @package action
- * @author  Frederic Guillot
+ * @author  David Morlitz
  */
 class TaskAssignCategory extends Base
 {
