@@ -21,7 +21,7 @@ class TaskAssignCategory extends Base
      */
     public function getDescription()
     {
-        return t('Automatically assign a category when a task is moved to a specific column');
+        return t('Automatically DMMassign a category and color when a task is moved to a specific column');
     }
 
     /**
@@ -34,7 +34,6 @@ class TaskAssignCategory extends Base
     {
         return array(
             TaskModel::EVENT_MOVE_COLUMN,
-            TaskModel::EVENT_CREATE,
         );
     }
 
@@ -49,6 +48,7 @@ class TaskAssignCategory extends Base
         return array(
             'column_id' => t('Column'),
             'category_id' => t('Category'),
+            'color_id' => t('Color'),
         );
     }
 
@@ -81,7 +81,7 @@ class TaskAssignCategory extends Base
         $values = array(
             'id' => $data['task_id'],
             'category_id' => $this->getParam('category_id'),
-            //'color_id' => $this->getParam('color_id'),
+            'color_id' => $this->getParam('color_id'),
         );
 
         return $this->taskModificationModel->update($values, false);
