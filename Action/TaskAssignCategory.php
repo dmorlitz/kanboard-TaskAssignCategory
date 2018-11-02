@@ -21,7 +21,7 @@ class TaskAssignCategory extends Base
      */
     public function getDescription()
     {
-        return t('Automatically DMMassign a category and color when a task is moved to a specific column');
+        return t('Automatically assign a category and color when a task is moved to a specific column');
     }
 
     /**
